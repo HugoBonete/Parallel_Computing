@@ -1,0 +1,7 @@
+COMPILAR Y EJECUTAR EN MPI:
+mpicc -o P1_D P1_D.c -lm
+mpirun -np 4 ./P1_D matriz150x150.bin 150 9
+
+COMPILAR Y EJECUTAR EN OPENMP:
+gcc -fopenmp -o Practica2_B Practica2_B.c
+./Practica2_B 4 matriz150x150.bin 150 2
